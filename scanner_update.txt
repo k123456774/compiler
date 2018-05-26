@@ -1,0 +1,9 @@
+include y.tab.h
+scanner這邊要配合y所定義之union傳資料給parser 
+such as: 所有資料宣告型態 id constant_value  
+把symbol table移到parser並改成可以多個symbol table
+且新增
+void update_value(char*,int,float);
+float get_value(char*,int);
+int   get_type(char*,int);
+int   check_in_scope(char*,int);
